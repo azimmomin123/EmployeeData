@@ -1,4 +1,4 @@
-document.ready(function(){
+$(document).ready(function(){
 
 // Initialize Firebase
 	var config = {
@@ -35,7 +35,6 @@ document.ready(function(){
 		}); // ends pushing the data to the firebase
 	}) // ends eventlistener for submit button
 	
-});
 
 	// Firebase watcher + initial loader HINT: .on("value")
     database.ref().on("value", function(snapshot) {
@@ -58,5 +57,5 @@ document.ready(function(){
       console.log("Errors handled: " + errorObject.code);
     });
 
-    hello
+});
 
