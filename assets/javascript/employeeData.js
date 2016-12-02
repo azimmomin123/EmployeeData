@@ -1,3 +1,5 @@
+document.ready(function(){
+
 // Initialize Firebase
 	var config = {
 		apiKey: "AIzaSyCjpprgdiv4hm0UwxcKIKZIqIL6KLBg3tQ",
@@ -19,4 +21,18 @@
 	var monthlyRate = 0;
 	var totalBilled = 0;
 
-	console.log("Kashan")
+	$("#submitButton").on("click", function(){
+
+		employeeName = $("#employeeName").val().trim();
+		role = $("#role").val().trim();
+		startDate = $("#startDate").val().trim();
+
+		database.ref().push({
+			name: employeeName,
+			role: role,
+			startDate: startDate,
+
+		}); // ends pushing the data to the firebase
+	}) // ends eventlistener for submit button
+	
+});
