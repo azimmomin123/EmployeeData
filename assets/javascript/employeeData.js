@@ -18,3 +18,5 @@
 	var monthsWorked = "";
 	var monthlyRate = 0;
 	var totalBilled = 0;
+
+	console.log("Kashan")
