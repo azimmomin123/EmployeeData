@@ -58,3 +58,5 @@ document.ready(function(){
       console.log("Errors handled: " + errorObject.code);
     });
 
+    hello
+
