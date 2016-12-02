@@ -47,9 +47,9 @@ $(document).ready(function(){
    
 
       // Change the HTML to reflect
-      $("#employeeName").html(snapshot.val().employeeName);
-      $("#role").html(snapshot.val().role);
-      $("#startDate").html(snapshot.val().startDate);
+      $("#employee-name").html(snapshot.val().employeeName);
+      $("#r").html(snapshot.val().role);
+      $("#start-date").html(snapshot.val().startDate);
    
 
     // Handle the errors
