@@ -12,12 +12,12 @@
 </head>
 <body>
 	<div class="container">
-		<div class="jumbotron">
+		<div class="row jumbotron">
 	    	<h1>Employee Data Management</h1>      
 	    	<p>A comprehensive Directory of Employee Billable Hours</p>
 		</div>     
 
-	  <div class="panel panel-primary">
+	  <div class="row panel panel-primary">
 	    <div class="panel-heading">Current Employee</div>
 	    <div></div>
 	    <div class="container">
@@ -45,24 +45,32 @@
 		  </table>
 	  	</div>
 	  </div>
+
+		<div class="container-fluid">
+		  <div class="panel panel-default">
+		    <div class="panel-heading">Add Employee</div>
+		     <div class="container-fluid">
+		    	
+			    <div class="form-group">
+			    	<!-- Name -->
+					<label for="employeeName">Employee Name:</label>
+					<input type="text" class="form-control" id="employeeName">
+					<!-- Role -->
+					<label for="role">Role:</label>
+					<input type="password" class="form-control" id="role">
+					<!-- Date Started -->
+					<label for="startDate">Start Date (MM/DD/YY):</label>
+					<input type="password" class="form-control" id="startDate">
+					<button type="submit" class="btn btn-default">Submit</button>
+				</div>
+			 </div>
+		  </div>
+		<!-- </div> -->
+
+
 	</div>
 	 
-	<div class="container">
-	  <div class="panel panel-default">
-	    <div class="panel-heading">Panel Heading</div>
 
-	    	<!-- Name -->
-		    <div class="form-group">
-			  <label for="usr">Name:</label>
-			  <input type="text" class="form-control" id="usr">
-			</div>
-			<!--  -->
-			<div class="form-group">
-			  <label for="pwd">Password:</label>
-			  <input type="password" class="form-control" id="pwd">
-			</div>
-	  </div>
-	</div>
 
 	</body>
 </html>
